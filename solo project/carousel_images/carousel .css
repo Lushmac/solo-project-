@@ -1,0 +1,31 @@
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+  }
+  
+  .carousel-images {
+    display: flex;
+    animation: scrollImages 20s linear infinite;
+  }
+  
+  .carousel-images img {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1000px); /* Adjust according to the total width of your images */
+    }
+  }
+  
